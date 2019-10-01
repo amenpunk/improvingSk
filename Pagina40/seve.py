@@ -19,12 +19,13 @@ def palindromo(word):
         reverse += word[cont-1]
         cont=cont-1
         x=x+1
-    if word == reverse:
+    if word.lower() == reverse.lower():
         print(word,"Es igual a",reverse,"Por lo tanto es un ","Palindromo")
     else:
         print(word,"No es igual a",reverse,"Por lo tanto no es un ","Palindromo")
 
-#palindromo("reconocer")
+pal = input("Ingresar una palabra: ")
+palindromo(pal)
 #palindromo("Hola")
 
 voc = ["hola","adios","aqui"]
@@ -42,4 +43,4 @@ def newPar(ulti):
         else:
             print(num ,"es impar")
 
-newPar(10)
+#newPar(10)
