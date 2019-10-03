@@ -23,4 +23,29 @@ k = (f + p)
 del k[len(k)-1]
 del k[5:len(k)]
 
-piramide()
+#piramide()
+d = "iguas"
+b = "igual"
+
+def idTest():
+    if id(d) == id(b):
+        print("MISMO ID")
+    else:
+        print("DIFERENTE ID")
+    #print(id(d), id(b))
+
+# referencias entre variables
+a = [1,2,3]
+# asignacion del alias
+b = a
+b[0] = "cambio"
+#print(a)
+
+def clonarLista(a,b):
+    b[len(b):] = a[:]
+
+a = [9,8,7]
+b = [0,1]
+
+clonarLista(a,b)
+print("desde b",b)
